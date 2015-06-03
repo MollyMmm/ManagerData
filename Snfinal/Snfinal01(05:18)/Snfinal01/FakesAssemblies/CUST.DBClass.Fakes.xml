@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CUST.DBClass.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:CUST.Fakes.ShimDBClass">
+            <summary>CUST.DBClass 的填充码类型</summary>
+        </member>
+        <member name="M:CUST.Fakes.ShimDBClass.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:CUST.Fakes.ShimDBClass.#ctor(CUST.DBClass)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:CUST.Fakes.ShimDBClass.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:CUST.Fakes.ShimDBClass.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.BuildIntCommandStringIDataParameterArray">
+            <summary>设置 DBClass.BuildIntCommand(String storedProcName, IDataParameter[] parameters) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.BuildQueryCommandStringIDataParameterArray">
+            <summary>设置 DBClass.BuildQueryCommand(String storedProcName, IDataParameter[] parameters) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.Close">
+            <summary>设置 DBClass.Close() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.Constructor">
+            <summary>设置 DBClass.DBClass() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.ConstructorBoolean">
+            <summary>设置 DBClass.DBClass(Boolean isUseTransaction) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.DecodeBase64String">
+            <summary>设置 DBClass.DecodeBase64(String code) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.DisableCommit">
+            <summary>设置 DBClass.DisableCommit() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.EnableCommit">
+            <summary>设置 DBClass.EnableCommit() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.GetConStrString">
+            <summary>设置 DBClass.GetConStr(String sKey) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.RunProcedureStringIDataParameterArray">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.RunProcedureStringIDataParameterArrayDataSetString">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters, DataSet dataSet, String tableName) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.RunProcedureStringIDataParameterArrayInt32Out">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters, Int32&amp; rowsAffected) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.RunProcedureStringIDataParameterArrayString">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.StaticConstructor">
+            <summary>设置 DBClass.DBClass() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.SynData">
+            <summary>设置 DBClass.SynData() 的 填充码</summary>
+        </member>
+        <member name="T:CUST.Fakes.ShimDBClass.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.BuildIntCommandStringIDataParameterArray">
+            <summary>设置 DBClass.BuildIntCommand(String storedProcName, IDataParameter[] parameters) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.BuildQueryCommandStringIDataParameterArray">
+            <summary>设置 DBClass.BuildQueryCommand(String storedProcName, IDataParameter[] parameters) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.Close">
+            <summary>设置 DBClass.Close() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.DisableCommit">
+            <summary>设置 DBClass.DisableCommit() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.EnableCommit">
+            <summary>设置 DBClass.EnableCommit() 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.RunProcedureStringIDataParameterArray">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.RunProcedureStringIDataParameterArrayDataSetString">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters, DataSet dataSet, String tableName) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.RunProcedureStringIDataParameterArrayInt32Out">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters, Int32&amp; rowsAffected) 的 填充码</summary>
+        </member>
+        <member name="P:CUST.Fakes.ShimDBClass.AllInstances.RunProcedureStringIDataParameterArrayString">
+            <summary>设置 DBClass.RunProcedure(String storedProcName, IDataParameter[] parameters, String tableName) 的 填充码</summary>
+        </member>
+        <member name="T:CUST.Fakes.StubDBClass">
+            <summary>CUST.DBClass 的存根类型</summary>
+        </member>
+        <member name="M:CUST.Fakes.StubDBClass.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CUST.Fakes.StubDBClass.#ctor(System.Boolean)">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:CUST.Fakes.StubDBClass.InitializeStub">
+            <summary>初始化 type StubDBClass 的新实例</summary>
+        </member>
+        <member name="P:CUST.Fakes.StubDBClass.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:CUST.Fakes.StubDBClass.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:CUST.Fakes.StubDBClass.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>

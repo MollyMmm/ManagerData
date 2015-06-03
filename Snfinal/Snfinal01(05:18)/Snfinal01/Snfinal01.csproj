@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F2B142A-805A-41B7-A75B-ABE134627597}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Snfinal01</RootNamespace>
+    <AssemblyName>`</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CUST, Version=1.0.5601.28571, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\CUST.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=10.2.0.100, Culture=neutral, PublicKeyToken=89b483f429c47342">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="artDialog4.1.6\artDialog.js" />
+    <Content Include="artDialog4.1.6\artDialog.source.js" />
+    <Content Include="artDialog4.1.6\index.html" />
+    <Content Include="artDialog4.1.6\jquery.artDialog.js" />
+    <Content Include="artDialog4.1.6\jquery.artDialog.source.js" />
+    <Content Include="artDialog4.1.6\license.txt" />
+    <Content Include="artDialog4.1.6\plugins\iframeTools.js" />
+    <Content Include="artDialog4.1.6\plugins\iframeTools.source.js" />
+    <Content Include="artDialog4.1.6\skins\aero.css" />
+    <Content Include="artDialog4.1.6\skins\aero\aero_s.png" />
+    <Content Include="artDialog4.1.6\skins\aero\aero_s2.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_close.hover.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_close.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_e.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_n.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_ne.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_nw.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_s.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_se.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_sw.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_title_icon.png" />
+    <Content Include="artDialog4.1.6\skins\aero\ie6\aui_w.png" />
+    <Content Include="artDialog4.1.6\skins\black.css" />
+    <Content Include="artDialog4.1.6\skins\black\bg.png" />
+    <Content Include="artDialog4.1.6\skins\black\bg2.png" />
+    <Content Include="artDialog4.1.6\skins\black\bg_css3.png" />
+    <Content Include="artDialog4.1.6\skins\black\bg_css3_2.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\close.hover.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\close.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\e.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\n.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\ne.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\nw.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\s.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\se.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\sw.png" />
+    <Content Include="artDialog4.1.6\skins\black\ie6\w.png" />
+    <Content Include="artDialog4.1.6\skins\blue.css" />
+    <Content Include="artDialog4.1.6\skins\blue\bg.png" />
+    <Content Include="artDialog4.1.6\skins\blue\bg2.png" />
+    <Content Include="artDialog4.1.6\skins\blue\bg_css3.png" />
+    <Content Include="artDialog4.1.6\skins\blue\bg_css3_2.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\close.hover.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\close.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\e.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\n.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\ne.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\nw.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\s.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\se.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\sw.png" />
+    <Content Include="artDialog4.1.6\skins\blue\ie6\w.png" />
+    <Content Include="artDialog4.1.6\skins\chrome.css" />
+    <Content Include="artDialog4.1.6\skins\chrome\border.png" />
+    <Content Include="artDialog4.1.6\skins\chrome\chrome_s.png" />
+    <Content Include="artDialog4.1.6\skins\default.css" />
+    <Content Include="artDialog4.1.6\skins\green.css" />
+    <Content Include="artDialog4.1.6\skins\green\bg.png" />
+    <Content Include="artDialog4.1.6\skins\green\bg2.png" />
+    <Content Include="artDialog4.1.6\skins\green\bg_css3.png" />
+    <Content Include="artDialog4.1.6\skins\green\bg_css3_2.png" />
+    <Content Include="artDialog4.1.6\skins\green\color_bg.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\close.hover.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\close.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\e.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\n.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\ne.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\nw.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\s.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\se.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\sw.png" />
+    <Content Include="artDialog4.1.6\skins\green\ie6\w.png" />
+    <Content Include="artDialog4.1.6\skins\icons\error.png" />
+    <Content Include="artDialog4.1.6\skins\icons\face-sad.png" />
+    <Content Include="artDialog4.1.6\skins\icons\face-smile.png" />
+    <Content Include="artDialog4.1.6\skins\icons\loading.gif" />
+    <Content Include="artDialog4.1.6\skins\icons\question.png" />
+    <Content Include="artDialog4.1.6\skins\icons\succeed.png" />
+    <Content Include="artDialog4.1.6\skins\icons\warning.png" />
+    <Content Include="artDialog4.1.6\skins\idialog.css" />
+    <Content Include="artDialog4.1.6\skins\idialog\idialog_s.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\idialog_s2.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_close.hover.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_close.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_e.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_n.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_ne.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_nw.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_s.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_se.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_sw.png" />
+    <Content Include="artDialog4.1.6\skins\idialog\ie6\aui_w.png" />
+    <Content Include="artDialog4.1.6\skins\opera.css" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_close.hover.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_close.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_e.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_n.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_ne.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_nw.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_s.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_se.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_sw.png" />
+    <Content Include="artDialog4.1.6\skins\opera\ie6\aui_w.png" />
+    <Content Include="artDialog4.1.6\skins\opera\s1.png" />
+    <Content Include="artDialog4.1.6\skins\opera\s2.png" />
+    <Content Include="artDialog4.1.6\skins\simple.css" />
+    <Content Include="artDialog4.1.6\skins\twitter.css" />
+    <Content Include="asp\login\login.aspx" />
+    <Content Include="asp\login\Random.aspx" />
+    <Content Include="asp\ordAdmin\backDeom.aspx" />
+    <Content Include="asp\ordAdmin\exchange\exchange.aspx" />
+    <Content Include="asp\ordAdmin\page.aspx" />
+    <Content Include="asp\ordAdmin\update.aspx" />
+    <Content Include="asp\superAdmin\admin\adminAdd.aspx" />
+    <Content Include="asp\superAdmin\admin\adminList.aspx" />
+    <Content Include="asp\superAdmin\index.aspx" />
+    <Content Include="asp\superAdmin\main.aspx" />
+    <Content Include="css\add.css" />
+    <Content Include="css\index.css" />
+    <Content Include="css\table.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\back.gif" />
+    <Content Include="images\first.gif" />
+    <Content Include="images\go.gif" />
+    <Content Include="images\last.gif" />
+    <Content Include="images\next.gif" />
+    <Content Include="js\bootstrap.min.css" />
+    <Content Include="js\common.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.tablesorter.min.js" />
+    <Content Include="js\tendina.min.js" />
+    <Content Include="js\validate.js" />
+    <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asp\login\Random.aspx.cs">
+      <DependentUpon>Random.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\login\Random.aspx.designer.cs">
+      <DependentUpon>Random.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\ordAdmin\backDeom.aspx.cs">
+      <DependentUpon>backDeom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\ordAdmin\backDeom.aspx.designer.cs">
+      <DependentUpon>backDeom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\ordAdmin\exchange\exchange.aspx.cs">
+      <DependentUpon>exchange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\ordAdmin\exchange\exchange.aspx.designer.cs">
+      <DependentUpon>exchange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\ordAdmin\page.aspx.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\ordAdmin\page.aspx.designer.cs">
+      <DependentUpon>page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\ordAdmin\update.aspx.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\ordAdmin\update.aspx.designer.cs">
+      <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\superAdmin\admin\adminAdd.aspx.cs">
+      <DependentUpon>adminAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\superAdmin\admin\adminAdd.aspx.designer.cs">
+      <DependentUpon>adminAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\superAdmin\admin\adminList.aspx.cs">
+      <DependentUpon>adminList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\superAdmin\admin\adminList.aspx.designer.cs">
+      <DependentUpon>adminList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\superAdmin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\superAdmin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp\superAdmin\main.aspx.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\superAdmin\main.aspx.designer.cs">
+      <DependentUpon>main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="src\model\Admin.cs" />
+    <Compile Include="src\model\Advertisment.cs" />
+    <Compile Include="src\model\ExpertMessage.cs" />
+    <Compile Include="src\model\News.cs" />
+    <Compile Include="src\model\PageBean.cs" />
+    <Compile Include="src\model\PageHead.cs" />
+    <Compile Include="src\model\Publicity.cs" />
+    <Compile Include="src\model\Technical.cs" />
+    <Compile Include="src\model\YellowPage.cs" />
+    <Compile Include="src\service\AdnimService.cs" />
+    <Compile Include="asp\login\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp\login\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\service\PageInfoService.cs" />
+    <Compile Include="src\util\Client.cs" />
+    <Compile Include="src\model\Goodsmessage.cs" />
+    <Compile Include="src\util\MD5Util.cs" />
+    <Compile Include="src\model\Notice.cs" />
+    <Compile Include="src\util\OClient.cs" />
+    <Compile Include="src\model\SoilMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="asp\superAdmin\power\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Fakes Include="Fakes\CUST.DBClass.fakes" />
+    <Content Include="#Sys.config" />
+    <None Include="Properties\PublishProfiles\webPublic.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1643</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1111/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

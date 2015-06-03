@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="cn.com.manager.model">
+	<class name="PowerInfo" table="power_info">
+		<id name="powerId" type="integer" column="power_id">
+			<generator class="native" />
+		</id>
+		
+		<property name="powerName" type="string" column="power_name" />
+		<property name="powerUrl" type="string" column="power_url" />
+		<property name="powerStatue" type="string" column="power_statue" />
+		<property name="parentId" type="integer" column="parent_id" />
+		
+		<set name="roleSet" table="link_power_role">
+			<key column="power_id" />
+			<many-to-many class="RoleInfo" column="role_id" />
+		</set>
+	</class>
+</hibernate-mapping>

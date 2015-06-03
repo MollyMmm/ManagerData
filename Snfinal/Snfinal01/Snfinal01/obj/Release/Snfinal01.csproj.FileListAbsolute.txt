@@ -1,0 +1,9 @@
+D:\projectVS\Snfinal01\Snfinal01\bin\Snfinal01.dll
+D:\projectVS\Snfinal01\Snfinal01\bin\Snfinal01.pdb
+D:\projectVS\Snfinal01\Snfinal01\bin\CUST.dll
+D:\projectVS\Snfinal01\Snfinal01\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\projectVS\Snfinal01\Snfinal01\bin\Oracle.DataAccess.dll
+D:\projectVS\Snfinal01\Snfinal01\obj\Release\Snfinal01.csprojFakesResolveAssemblyReference.cache
+D:\projectVS\Snfinal01\Snfinal01\obj\Release\Snfinal01.csprojResolveAssemblyReference.cache
+D:\projectVS\Snfinal01\Snfinal01\obj\Release\Snfinal01.dll
+D:\projectVS\Snfinal01\Snfinal01\obj\Release\Snfinal01.pdb

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="cn.com.manager.model">
+	<class name="AdminInfo" table="admin_info">
+		<id name="id" type="integer" column="admin_id">
+			<generator class="native" />
+		</id>
+		
+		<property name="userName" type="string" length="64" column="admin_name" />
+		<property name="password" type="string" length="64" column="admin_password" />
+		<property name="identity" type="integer" column="user_name" />
+		<property name="realName" type="string" length="64" column="admin_realName" />
+		<property name="creatTime" type="timestamp" length="64" column="admin_creatTime" />
+		<property name="sex" type="string" length="64" column="admin_sex" />
+		<property name="tele" type="string" length="64" column="admin_tele" />
+		
+		
+		<set name="roleSet" table="link_admin_role" lazy="false">
+			<key column="admin_id" />
+			<many-to-many class="RoleInfo" column="role_id" />
+		</set>
+	</class>
+</hibernate-mapping>

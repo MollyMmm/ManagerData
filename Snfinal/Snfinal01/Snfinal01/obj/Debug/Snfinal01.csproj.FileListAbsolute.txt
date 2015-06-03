@@ -1,0 +1,13 @@
+C:\Users\wabzsy\Documents\Visual Studio 2012\Projects\Snfinal01\Snfinal01\bin\Snfinal01.dll
+C:\Users\wabzsy\Documents\Visual Studio 2012\Projects\Snfinal01\Snfinal01\bin\Snfinal01.pdb
+C:\Users\wabzsy\Documents\Visual Studio 2012\Projects\Snfinal01\Snfinal01\obj\Debug\Snfinal01.dll
+C:\Users\wabzsy\Documents\Visual Studio 2012\Projects\Snfinal01\Snfinal01\obj\Debug\Snfinal01.pdb
+D:\projectVS\Snfinal01\Snfinal01\obj\Debug\Snfinal01.csprojFakesResolveAssemblyReference.cache
+D:\projectVS\Snfinal01\Snfinal01\obj\Debug\Snfinal01.csprojResolveAssemblyReference.cache
+D:\projectVS\Snfinal01\Snfinal01\bin\Snfinal01.dll
+D:\projectVS\Snfinal01\Snfinal01\bin\Snfinal01.pdb
+D:\projectVS\Snfinal01\Snfinal01\bin\CUST.dll
+D:\projectVS\Snfinal01\Snfinal01\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\projectVS\Snfinal01\Snfinal01\obj\Debug\Snfinal01.dll
+D:\projectVS\Snfinal01\Snfinal01\obj\Debug\Snfinal01.pdb
+D:\projectVS\Snfinal01\Snfinal01\bin\Oracle.DataAccess.dll

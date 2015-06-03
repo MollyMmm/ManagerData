@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<!-- 在web.xml中 配置连接池 -->
+	<servlet>
+	   <servlet-name>ServletConfigurator</servlet-name>
+	   <!-- 在web.xml中 配置proxool连接池连接 -->
+	   <servlet-class>
+			org.logicalcobwebs.proxool.configuration.ServletConfigurator
+	   </servlet-class>
+	   <init-param>
+	      <param-name>xmlFile</param-name>
+	      <param-value>WEB-INF/proxool.xml</param-value>
+	   </init-param>
+	   
+	   <load-on-startup>1</load-on-startup>
+	</servlet>
+
+<!-- 出让土地信息 -->
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SoilMessageDeleteServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SoilMessageDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SoilMessageAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SoilMessageAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SoilMessageSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SoilMessageSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SoilMessageSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SoilMessageSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SoilMessageUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SoilMessageUpServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>SoilMessageDeleteServlet</servlet-name>
+    <url-pattern>/SoilMessageDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SoilMessageAddServlet</servlet-name>
+    <url-pattern>/SoilMessageAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  <servlet-name>SoilMessageSearchServlet</servlet-name>
+    <url-pattern>/SoilMessageSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SoilMessageSelOneServlet</servlet-name>
+    <url-pattern>/SoilMessageSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SoilMessageUpServlet</servlet-name>
+    <url-pattern>/SoilMessageUpServlet</url-pattern>
+  </servlet-mapping>
+<!--  -->
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrivateConsultServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PrivateConsultServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExpertMessageServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExpertMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostMessageServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PostMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrivateConsultDeleteServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PrivateConsultDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrivateConsultAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PrivateConsultAddServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrivateConsultSelOne</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PrivateConsultSelOne</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConUpPriServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ConUpPriServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExpertMessageAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExpertMessageAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExpertMessageDeleteServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExpertMessageDeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostMessageAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PostMessageAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostMessageDeleteServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PostMessageDeleteServlet</servlet-class>
+  </servlet>
+
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingSoilServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingSoilServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingSoilAddServet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingSoilAddServet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PrivateConsultSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PrivateConsultSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingSoilDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingSoilDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingSoilSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingSoilSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExpertMessageSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExpertMessageSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExpertMessageSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExpertMessageSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExpertMessageUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExpertMessageUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingSoilUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingSoilUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingSoilSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingSoilSearchServlet</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostMessageSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PostMessageSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostMessageUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PostMessageUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostMessageSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PostMessageSearchServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  
+  <!--                      这里是下一部分文件                                       -->
+  
+ 
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YellowShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.YellowShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsMessageServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.GoodsMessageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsMessageShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.GoodsMessageShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PloughShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PloughShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedbackShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublicityShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PublicityShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YellowDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.YellowDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YellowAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.YellowAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsMessageDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.GoodsMessageDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsMessageAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.GoodsMessageAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PubliciityDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PubliciityDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublicityAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PublicityAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PloughDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PloughDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PloughAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PloughAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedbackDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedbackAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YellowSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.YellowSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YellowUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.YellowUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsMessageSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.GoodsMessageSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsMessageUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.GoodsMessageUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedbackSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedbackUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PloughSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PloughSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PloughUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PloughUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublicitySelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PublicitySelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublicityUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PublicityUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>YellowSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.YellowSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsMessageSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.GoodsMessageSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PloughSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PloughSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedbackSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PublicitySearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.PublicitySearchServlet</servlet-class>
+  </servlet>
+
+<!-- molly -->
+
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.login.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminAddServlet</servlet-name>
+    <url-pattern>/AdminAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateAdminServlet</servlet-name>
+    <url-pattern>/UpdateAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <url-pattern>/DeleteAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchAjaxServlet</servlet-name>
+    <url-pattern>/SearchAjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConUpdateAdminServlet</servlet-name>
+    <url-pattern>/ConUpdateAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePwServlet</servlet-name>
+    <url-pattern>/UpdatePwServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VailPwAjaxServlet</servlet-name>
+    <url-pattern>/VailPwAjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidateRandomServlet</servlet-name>
+    <url-pattern>/ValidateRandomServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VailUserAjaxServlet</servlet-name>
+    <url-pattern>/VailUserAjaxServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 登录过滤器-->
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>cn.com.managerData.util.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping> 
+	<!-- 登录过滤器 //-->
+<!-- liu -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExchangeShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExchangeShowServlet</servlet-class>
+  </servlet>  
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExchangeDoServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExchangeDoServlet</servlet-class>
+  </servlet>
+
+                                 <!--          到这里是第二部分结束-->
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>PrivateConsultServlet</servlet-name>
+    <url-pattern>/PrivateConsultServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExpertMessageServlet</servlet-name>
+    <url-pattern>/ExpertMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostMessageServlet</servlet-name>
+    <url-pattern>/PostMessageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrivateConsultDeleteServlet</servlet-name>
+    <url-pattern>/PrivateConsultDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrivateConsultAddServlet</servlet-name>
+    <url-pattern>/PrivateConsultAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrivateConsultSelOne</servlet-name>
+    <url-pattern>/PrivateConsultSelOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConUpPriServlet</servlet-name>
+    <url-pattern>/ConUpPriServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExpertMessageAddServlet</servlet-name>
+    <url-pattern>/ExpertMessageAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExpertMessageDeleteServlet</servlet-name>
+    <url-pattern>/ExpertMessageDeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostMessageAddServlet</servlet-name>
+    <url-pattern>/PostMessageAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostMessageDeleteServlet</servlet-name>
+    <url-pattern>/PostMessageDeleteServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>SellingSoilServlet</servlet-name>
+    <url-pattern>/SellingSoilServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellingSoilAddServet</servlet-name>
+    <url-pattern>/SellingSoilAddServet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PrivateConsultSearchServlet</servlet-name>
+    <url-pattern>/PrivateConsultSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellingSoilDelServlet</servlet-name>
+    <url-pattern>/SellingSoilDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellingSoilSelOneServlet</servlet-name>
+    <url-pattern>/SellingSoilSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExpertMessageSearchServlet</servlet-name>
+    <url-pattern>/ExpertMessageSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExpertMessageSelOneServlet</servlet-name>
+    <url-pattern>/ExpertMessageSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExpertMessageUpServlet</servlet-name>
+    <url-pattern>/ExpertMessageUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellingSoilUpServlet</servlet-name>
+    <url-pattern>/SellingSoilUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellingSoilSearchServlet</servlet-name>
+    <url-pattern>/SellingSoilSearchServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>PostMessageSelOneServlet</servlet-name>
+    <url-pattern>/PostMessageSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostMessageUpServlet</servlet-name>
+    <url-pattern>/PostMessageUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostMessageSearchServlet</servlet-name>
+    <url-pattern>/PostMessageSearchServlet</url-pattern>
+  </servlet-mapping>
+  
+                                      <!-- 这里是第二部分开始    -->
+
+ <servlet-mapping>
+    <servlet-name>YellowShowServlet</servlet-name>
+    <url-pattern>/YellowShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsMessageShowServlet</servlet-name>
+    <url-pattern>/GoodsMessageShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PloughShowServlet</servlet-name>
+    <url-pattern>/PloughShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeShowServlet</servlet-name>
+    <url-pattern>/NoticeShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackShowServlet</servlet-name>
+    <url-pattern>/FeedbackShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublicityShowServlet</servlet-name>
+    <url-pattern>/PublicityShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YellowDelServlet</servlet-name>
+    <url-pattern>/YellowDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YellowAddServlet</servlet-name>
+    <url-pattern>/YellowAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsMessageDelServlet</servlet-name>
+    <url-pattern>/GoodsMessageDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsMessageAddServlet</servlet-name>
+    <url-pattern>/GoodsMessageAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PubliciityDelServlet</servlet-name>
+    <url-pattern>/PubliciityDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublicityAddServlet</servlet-name>
+    <url-pattern>/PublicityAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PloughDelServlet</servlet-name>
+    <url-pattern>/PloughDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PloughAddServlet</servlet-name>
+    <url-pattern>/PloughAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackDelServlet</servlet-name>
+    <url-pattern>/FeedbackDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackAddServlet</servlet-name>
+    <url-pattern>/FeedbackAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeDelServlet</servlet-name>
+    <url-pattern>/NoticeDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeAddServlet</servlet-name>
+    <url-pattern>/NoticeAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YellowSelOneServlet</servlet-name>
+    <url-pattern>/YellowSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YellowUpServlet</servlet-name>
+    <url-pattern>/YellowUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsMessageSelOneServlet</servlet-name>
+    <url-pattern>/GoodsMessageSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsMessageUpServlet</servlet-name>
+    <url-pattern>/GoodsMessageUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackSelOneServlet</servlet-name>
+    <url-pattern>/FeedbackSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackUpServlet</servlet-name>
+    <url-pattern>/FeedbackUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PloughSelOneServlet</servlet-name>
+    <url-pattern>/PloughSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PloughUpServlet</servlet-name>
+    <url-pattern>/PloughUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeSelOneServlet</servlet-name>
+    <url-pattern>/NoticeSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeUpServlet</servlet-name>
+    <url-pattern>/NoticeUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublicitySelOneServlet</servlet-name>
+    <url-pattern>/PublicitySelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublicityUpServlet</servlet-name>
+    <url-pattern>/PublicityUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>YellowSearchServlet</servlet-name>
+    <url-pattern>/YellowSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsMessageSearchServlet</servlet-name>
+    <url-pattern>/GoodsMessageSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PloughSearchServlet</servlet-name>
+    <url-pattern>/PloughSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeSearchServlet</servlet-name>
+    <url-pattern>/NoticeSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackSearchServlet</servlet-name>
+    <url-pattern>/FeedbackSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublicitySearchServlet</servlet-name>
+    <url-pattern>/PublicitySearchServlet</url-pattern>
+  </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ 
+                                          <!-- 这里是第二部分结束    -->
+ 
+ 
+ <!-- molly -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminAddServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.AdminAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateAdminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.UpdateAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteAdminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.DeleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchAjaxServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.SearchAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConUpdateAdminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.ConUpdateAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePwServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.UpdatePwServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VailPwAjaxServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.VailPwAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ValidateRandomServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.ValidateRandomServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VailUserAjaxServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.superAdmin.VailUserAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExchangeSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExchangeSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeTypeServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NoticeTypeDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.NoticeTypeDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>noticeTypeAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.noticeTypeAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExchangeChangeShowServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExchangeChangeShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ExchangeFlowDoServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.ExchangeFlowDoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedBackTypeServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedBackTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedBackTypeDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedBackTypeDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedBackTypeAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FeedBackTypeAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechnicalServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.TechnicalServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechnicalAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.TechnicalAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechnicalDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.TechnicalDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechnicalSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.TechnicalSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechnicalSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.TechnicalSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechnicalUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.TechnicalUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FarmingServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FarmingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FarmingAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FarmingAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FarmingDelServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FarmingDelServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FarmingSearchServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FarmingSearchServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FarmingSelOneServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FarmingSelOneServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FarmingUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.FarmingUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TechincalUpServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.TechincalUpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SellingAddServlet</servlet-name>
+    <servlet-class>cn.com.adminData.servlet.SellingAddServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- liu -->
+   <servlet-mapping>
+    <servlet-name>ExchangeShowServlet</servlet-name>
+    <url-pattern>/ExchangeShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExchangeDoServlet</servlet-name>
+    <url-pattern>/ExchangeDoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExchangeSearchServlet</servlet-name>
+    <url-pattern>/ExchangeSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeTypeServlet</servlet-name>
+    <url-pattern>/NoticeTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NoticeTypeDelServlet</servlet-name>
+    <url-pattern>/NoticeTypeDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>noticeTypeAddServlet</servlet-name>
+    <url-pattern>/noticeTypeAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExchangeChangeShowServlet</servlet-name>
+    <url-pattern>/ExchangeChangeShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExchangeFlowDoServlet</servlet-name>
+    <url-pattern>/ExchangeFlowDoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackTypeServlet</servlet-name>
+    <url-pattern>/FeedBackTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackTypeDelServlet</servlet-name>
+    <url-pattern>/FeedBackTypeDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackTypeAddServlet</servlet-name>
+    <url-pattern>/FeedBackTypeAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechnicalServlet</servlet-name>
+    <url-pattern>/TechnicalServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechnicalAddServlet</servlet-name>
+    <url-pattern>/TechnicalAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechnicalDelServlet</servlet-name>
+    <url-pattern>/TechnicalDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechnicalSearchServlet</servlet-name>
+    <url-pattern>/TechnicalSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechnicalSelOneServlet</servlet-name>
+    <url-pattern>/TechnicalSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechnicalUpServlet</servlet-name>
+    <url-pattern>/TechnicalUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FarmingServlet</servlet-name>
+    <url-pattern>/FarmingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FarmingAddServlet</servlet-name>
+    <url-pattern>/FarmingAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FarmingDelServlet</servlet-name>
+    <url-pattern>/FarmingDelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FarmingSearchServlet</servlet-name>
+    <url-pattern>/FarmingSearchServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FarmingSelOneServlet</servlet-name>
+    <url-pattern>/FarmingSelOneServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FarmingUpServlet</servlet-name>
+    <url-pattern>/FarmingUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellingServlet</servlet-name>
+    <url-pattern>/SellingServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TechincalUpServlet</servlet-name>
+    <url-pattern>/TechincalUpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SellingAddServlet</servlet-name>
+    <url-pattern>/SellingAddServlet</url-pattern>
+  </servlet-mapping>
+ 
+ <!--编码过滤器 -->
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>cn.com.managerData.util.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

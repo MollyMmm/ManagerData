@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VAilUserAjaxServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.VAilUserAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>adminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.adminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>adminAddServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.adminAddServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updateAdminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.updateAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConUpdateAdminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.ConUpdateAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.deleteAdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SearchAjaxServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.SearchAjaxServlet</servlet-class>
+  </servlet>
+<!-- 登录过滤器 -->
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>cn.com.managerData.util.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+		<url-pattern>/superAdmin/*</url-pattern>
+		<url-pattern>/login/*</url-pattern>
+	</filter-mapping>
+	<!-- 登录过滤器 -->
+	<!-- 编码过滤器 -->
+	<filter>
+		<filter-name>EnCodingFilter</filter-name>
+		<filter-class>cn.com.managerData.util.EnCodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EnCodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- //编码过滤器 -->
+<!-- 在web.xml中 配置连接池 -->
+	<servlet>
+	   <servlet-name>ServletConfigurator</servlet-name>
+	   <!-- 在web.xml中 配置proxool连接池连接 -->
+	   <servlet-class>
+			org.logicalcobwebs.proxool.configuration.ServletConfigurator
+	   </servlet-class>
+	   <init-param>
+	      <param-name>xmlFile</param-name>
+	      <param-value>WEB-INF/proxool.xml</param-value>
+	   </init-param>
+	   
+	   <load-on-startup>1</load-on-startup>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updatePwServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.updatePwServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VailPwAjaxServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.VailPwAjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>VAilPwAjaxServlet</servlet-name>
+    <servlet-class>cn.com.managerData.superAdmin.servlet.VAilPwAjaxServlet</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PowerShowServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.power.PowerShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PowerServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.power.PowerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PowerUpdateServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.power.PowerUpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PowerDeleteServlet</servlet-name>
+    <servlet-class>cn.com.managerData.servlet.power.PowerDeleteServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VAilUserAjaxServlet</servlet-name>
+    <url-pattern>/VAilUserAjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminAddServlet</servlet-name>
+    <url-pattern>/adminAddServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>adminServlet</servlet-name>
+    <url-pattern>/adminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateAdminServlet</servlet-name>
+    <url-pattern>/updateAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConUpdateAdminServlet</servlet-name>
+    <url-pattern>/ConUpdateAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteAdminServlet</servlet-name>
+    <url-pattern>/deleteAdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchAjaxServlet</servlet-name>
+    <url-pattern>/SearchAjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updatePwServlet</servlet-name>
+    <url-pattern>/updatePwServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VailPwAjaxServlet</servlet-name>
+    <url-pattern>/VailPwAjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VAilPwAjaxServlet</servlet-name>
+    <url-pattern>/VAilPwAjaxServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>PowerShowServlet</servlet-name>
+    <url-pattern>/PowerShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PowerServlet</servlet-name>
+    <url-pattern>/PowerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PowerUpdateServlet</servlet-name>
+    <url-pattern>/PowerUpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PowerDeleteServlet</servlet-name>
+    <url-pattern>/PowerDeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

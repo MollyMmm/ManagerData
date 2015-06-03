@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxool-config>
+   <proxool>
+   <!-- 连接池别名 ,工具类获取连接时使用-->
+      <alias>datasource1</alias>
+      <!-- 获得url -->
+      <driver-url>jdbc:oracle:thin:@127.0.0.1:1521:orcl</driver-url>
+      <!-- 加载数据库驱动 -->
+      <driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+      <!-- 填写用户名,密码 -->
+      <driver-properties>
+	      <property name="user" value="sannong"/>
+	      <property name="password" value="root"/>
+      </driver-properties>
+      <!-- 保留线程处于睡眠状态的最长时间  -->
+      <house-keeping-sleep-time>60000</house-keeping-sleep-time>
+      <!-- 持有的最多连接数 -->
+      <maximum-connection-count>5</maximum-connection-count>
+      <!-- 持有的最少连接数 -->
+      <minimum-connection-count>2</minimum-connection-count>
+      <!-- 持有的最少的可用连接数 -->
+      <prototype-count>1</prototype-count>
+      <!-- 获取新连接的数量 -->
+      <maximum-new-connections>1</maximum-new-connections>
+      <!-- 同时最大链接 -->
+      <simultaneous-build-throttle>1</simultaneous-build-throttle>
+      <!-- 统计链接数量 -->
+      <statistics>30s,10m,1d</statistics>
+      <!-- 日志系统跟踪类型 ERROR/INFO -->
+      <statistics-log-level>ERROR</statistics-log-level>
+   </proxool>
+</proxool-config>
